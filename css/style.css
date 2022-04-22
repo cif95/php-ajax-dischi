@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 7vh;
+	background-color: #2E3A46;
+}
+
+body {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+main {
+	padding-top: 4rem;
+	height: 93vh;
+	background-color: #1E2D3B;
+}
+
+.container {
+	width: 65%;
+	margin: 0 auto;
+}
+
+section#albums-cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+div.album-card {
+	width: calc( (100% / 5) - 4rem );
+	height: 300px;
+	padding: 1rem;
+	text-align: center;
+	color: grey;
+	background-color: #2E3A46;
+}
+
+div.album-card h3.title {
+	color: white;
+	padding: 0.75rem 0;
+}
+
+
+div.album-card img{
+	width: 100%;
+}
