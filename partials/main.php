@@ -1,22 +1,20 @@
 <?php 
-	include_once __DIR__ . "/../server/data.php"
+	include __DIR__ . "/../server/data.php"
 ; ?>
 
 <main>
 	<section id="albums-cards" class="container">
-		<?php foreach($albums as $albums) { ; ?>
-			<div class="album-card">
-				<img src="<?= $albums['poster'] ; ?>" alt="<?= $albums['title'] ; ?>" />
+			<div class="album-card" v-for="album in albums">
+				<img :src="album.poster" :alt="album.title" />
 				<h3 class="title">
-					<?= $albums['title'] ; ?>
+					{{ album.title}}
 				</h3>
 				<p class="author">
-					<?= $albums['author'] ; ?>
+					{{ album.author}}
 				</p>
 				<span class="year">
-					<?= $albums['year'] ; ?>
+					{{ album.year}}
 				</span>
 			</div>
-		<?php } ; ?>
 	</section>
 </main>

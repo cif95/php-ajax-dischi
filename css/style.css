@@ -9,6 +9,11 @@ header {
 	background-color: #2E3A46;
 }
 
+header img {
+	width: 70px;
+	padding: 0.5rem 0.85rem 0;
+}
+
 body {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 }
@@ -33,7 +38,7 @@ section#albums-cards {
 
 div.album-card {
 	width: calc( (100% / 5) - 4rem );
-	height: 300px;
+	height: 350px;
 	padding: 1rem;
 	text-align: center;
 	color: grey;
