@@ -1,7 +1,3 @@
-<?php 
-	include __DIR__ . "/../server/data.php"
-; ?>
-
 <main>
 	<section id="albums-cards" class="container">
 			<div class="album-card" v-for="album in albums">
@@ -15,6 +11,9 @@
 				<span class="year">
 					{{ album.year}}
 				</span>
+				<p class="genre">
+					{{ album.genre}}
+				</p>
 			</div>
 	</section>
 </main>
